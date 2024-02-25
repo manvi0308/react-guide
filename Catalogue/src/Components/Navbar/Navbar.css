@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topNavbar {
+    border-bottom: 1px solid rgb(204, 202, 202);
+}
+
+.navbarList {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 12px 8px;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+
+.navbarList li a{
+    text-decoration: none;
+    color: black;
+   padding: 15px;
+}
+
+.navbarList li a:hover{
+    color: white;
+    background-color: #fa2020;
+    border-radius: 20%;
+}
