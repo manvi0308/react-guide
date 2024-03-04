@@ -13,4 +13,13 @@ On screen width greater than 800px, the navbar is as shown below
   - Each of the user credentials will be stored in state and this state will be further used via **context** in Profile Component.
 ![alt text](image-2.png)
 
-**The button component is a reusable react component**
+**The button component is a reusable react component** 
+<hr>
+
+**Usage of context**
+
+- Context is used to store username so that username can be passed through various components without prop drilling.
+- Its also used to store if form is submitted or not.
+- Its also used to store navbar status i.e. if it has to toggle or not and depening upon that css of other components will be changed.
+
+

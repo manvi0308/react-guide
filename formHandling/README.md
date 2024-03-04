@@ -1,12 +1,11 @@
-# React + Vite
+**Form Handling in React**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple react project showcasing form handling in react. It incorporates the following
 
-Currently, two official plugins are available:
+- Input fields capturing the user email and password.
+- Stores the credentials in single state 
+- Does validation of entered credntials using an external validation criteria specified.
+- Upon successful validation, logs in the user.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast 
-  
-
-
-  
+*Concepts used* 
+Form Handling, State, Conditional Rendering of Components
