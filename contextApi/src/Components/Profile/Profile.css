@@ -1,0 +1,14 @@
+.profileContainer{
+    height: 100vh;
+    color: white;
+    width: 50%;
+    margin: 4% auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcomeContainer{
+    border: 3px solid green;
+}
+.detailsContainer{
+    border: 3px solid red;
+}
