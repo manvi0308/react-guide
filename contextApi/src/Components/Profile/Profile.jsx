@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import "./Profile.css";
 import UserDetailContext from "./../../Context/UserDetailContext";
-import Item from './../Item/Item';
-import data from "./items.json";
+import Item from "./../Item/Item";
 function Profile() {
   const { userName } = useContext(UserDetailContext);
   return (
@@ -14,7 +13,6 @@ function Profile() {
             dicta ratione! Culpa excepturi natus eveniet tempora a dolor eaque
           </p>
         </div>
-        
       </div>
     </>
   );
