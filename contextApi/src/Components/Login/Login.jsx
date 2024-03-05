@@ -3,6 +3,7 @@ import Input from "./../Input/Input";
 import "./Login.css";
 import Profile from "./../Profile/Profile";
 import UserDetailContext from "./../../Context/UserDetailContext";
+import Modal from "./../Modal/Modal";
 
 function Login() {
   const {
@@ -17,6 +18,15 @@ function Login() {
     showNavbar,
   } = useContext(UserDetailContext);
 
+  const [open, setopen] = useState(false);
+
+  const handleClose = () => {
+    setopen(false);
+  };
+
+  const handleOpen = () => {
+    setopen(true);
+  };
   // This function should be invoked when the user clicks the submit button.
   function handleSubmit() {
     /* console.log("HandleSubmit");
@@ -67,7 +77,19 @@ function Login() {
                 molestiae, dolor magnam dicta ratione! Culpa excepturi natus
                 eveniet tempora a dolor eaq
               </p>
-              <button>Read More</button>
+              {/* Implement a modal here */}
+              <button onClick={handleOpen}>Read More</button>
+              <Modal isOpen={open} onClose={handleClose}>
+                <>
+                  <h2>RMK - Legacy Continues</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit nihil non tenetur earum aperiam nulla iure harum, quasi
+                    quas unde maxime tempora. A consequuntur excepturi enim
+                    provident nulla molestias accusamus?
+                  </p>
+                </>
+              </Modal>
             </div>
           </div>
           <div className="loginContainer">

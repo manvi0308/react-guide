@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./Profile.css";
 import UserDetailContext from "./../../Context/UserDetailContext";
-import Item from "./../Item/Item";
 function Profile() {
   const { userName } = useContext(UserDetailContext);
   return (

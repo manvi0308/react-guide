@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Components/Login/Login";
 import { UserDetailProvider } from "./Context/UserDetailContext";
-import Profile from './Components/Profile/Profile';
+import Profile from "./Components/Profile/Profile";
+import Detail from './Components/Detail/Detail';
 
 function App() {
   const navbarItems = [
@@ -18,6 +19,7 @@ function App() {
     <UserDetailProvider>
       <Navbar items={navbarItems} />
       <Login />
+      <Detail/>
     </UserDetailProvider>
   );
 }
